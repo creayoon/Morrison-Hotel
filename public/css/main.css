@@ -1,0 +1,517 @@
+/*반응형 웹*/
+@media screen and (max-width:768px) {
+  /*바뀔 내용*/
+}
+
+@font-face{
+	font-family:"montserrat";
+	src:url('/fonts/montserrat.otf');
+	/*폰트 로딩 에러남, 콘솔확인*/
+	src:url('/fonts/lola.ttf');
+}
+
+	#visual .slider{
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	/*세모 border로 우째 만듦?*/
+	.slider .imgWrapper {
+		/*position: absolute;
+		width: 4890px;
+		left:-476px;
+		transform: translate3d(-360px, 0px, 0px);*/
+		transition: 0.5s;
+	}
+
+	.imgWrapper a {
+		float: left;
+		width: 952px;
+	}
+
+	.imgWrapper img {
+		width: 100%;
+	}
+
+	.imgWrapper img:hover {
+		-webkit-filter: grayscale(100%); 
+	}
+
+	.sliderDot {
+		position: absolute;
+		left: 50%;
+		margin-left: -72px;
+		bottom: 0px;
+	}
+
+	.sliderDot ol li {
+		width: 10px;
+		height: 10px;
+		border: 1px solid #e6e6e6;
+		background-color: #e6e6e6;
+		border-radius: 100%;
+		text-indent: -999%;
+		float: left;
+		margin: 20px 6px;
+	}
+
+	.sliderDot ol li:hover, 
+	.sliderDot ol li.active {
+		border: 1px solid #c19c78;
+		background-color: #c19c78;
+	}
+
+	.reservation {
+		position: relative;
+	}
+
+	.reservation form {
+		margin-top: 20px;
+	}
+
+	.reservation fieldset{
+		border: none;
+		padding: 15px 0 50px 0;
+		text-align: center;
+	}
+
+	.reservation legend{
+		display: none;
+	}
+
+	.daypickerCal {
+		width: 238px;
+		height: 23px;
+		color: #999;
+		font-weight: 700;
+		padding: 5px 20px ;
+		border: 3px solid #ebebeb;
+	}
+
+	.daypickerBtn {
+		width: 151px;
+		height: 18px;
+		margin-left: 22px;
+		padding: 10px 35px;
+		background-color: #c19c78;
+		color: #fff;
+		font-size: 11px;
+		letter-spacing: 2px;
+		border: none;
+		border-radius: 120px;
+		font-weight: bold;
+	}
+
+	#contents {
+		width: 1140px;
+		margin: 0 auto;
+	}
+
+	.title-column {
+		width: 1140px;
+	}
+
+	.title-column-1 {
+		width: 547px;
+		height: 205px;
+		margin: 0 45px 40px 0;
+		float: left;
+   	}
+	
+	.title-column{ 
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+
+	.title-column-1 h2 {
+		margin: 0 0 50px 0;
+		font-size: 41.6px;
+		letter-spacing: 1px;
+		line-height: 45.76px;
+		font-family: "montserrat", serif; 
+	}
+
+	.title-column-1 h2:before{
+		content: '';
+		display: block;
+		width: 100px;
+		height: 5px;
+		background-color: #c19c78;
+		margin-bottom: 20.8px;
+	}
+
+	.title-column-2, .title-column-3 {
+		width: 250px;
+		height: 230px;
+		float: left;
+	}
+
+	.title-column-2 h6, .title-column-3 h6 {
+		margin-bottom: 14px;
+		font-size: 12px;
+	}
+
+	.title-column-2 p, .title-column-3 p {
+		font-family: "lola", serif;
+		font-size: 14px;
+		margin-bottom: 14px;
+		line-height: 23.8px;
+	}
+
+	.sliderWrapper2 {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.sliderImg {
+		position: relative;
+		overflow: hidden;
+		width: 1140px;
+		float: left;
+		height: 700px;
+	}
+
+	.sliderImg > ul > li {
+		position: absolute;
+	}
+
+	.sliderImg:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+	    margin-top: -31px;
+		border-bottom: 45px solid transparent;
+	    border-left: 50px solid #fff;
+	    border-top: 45px solid transparent;
+	    margin-top: -45px;
+	    z-index: 10;
+	}
+
+	.sliderImg:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+	    margin-top: -31px;
+		border-bottom: 45px solid transparent;
+	    border-right: 50px solid #fff;
+	    border-top: 45px solid transparent;
+	    margin-top: -45px;
+	    z-index: 10;
+	}
+
+	.sliderIndex { 
+		position: absolute;
+		left: 50%;
+		margin-left: -72px;
+		bottom: 12px;
+		width: 100%;
+	}
+
+	.sliderIndex ol { 
+		overflow: hidden; 
+	}
+
+	/*인덱스 동그라미 만드는 방법*/
+	.sliderIndex ol li {
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+		background-color: #e6e6e6;
+		text-indent: -999%;
+		display: inline-block;
+		margin: 20px 6px;
+	}
+
+	.sliderIndex ol li a {
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.sliderIndex ol li:hover, 
+	.sliderIndex ol li.active {
+		background-color: #c19c78;
+	}
+
+	.center-word {
+		clear: both;
+		margin: 0 auto;		
+	}
+
+	.center-word p {
+		width: 684px;
+		margin: 30px 228px; 
+		display: inline-block; 
+		font-size: 18px;
+		font-family: "lola", serif; 
+		line-height: 30.6px;
+		text-align: center;
+	}
+
+	.center-word p:after {
+		position: relative;
+		content: '';
+		display: block; 
+		width: 400px;
+		height: 1px;
+		background-color: #ebebeb;
+		left: 50%;
+		margin: 50px 0 30px -200px;
+	}
+
+	.gallary-matrix { 
+		overflow: hidden;
+	}
+
+	.gallary-matrix ul li {
+		width: 350px;
+		height: 320px;
+		float: left;
+		display: inline-block;
+	}
+
+	.room-no-margin {
+		margin: 0 45px 21px 0; 
+	}
+
+	.room-right-margin {
+		margin: 0 0 21px 0; 
+	}
+	
+	.gallary-matrix ul li img {
+		width: 350px;
+		height: 214px;
+		margin-bottom: 21px; 
+	}
+
+	.gallary-matrix ul li h3 {
+		font-size: 12px;
+		font-family: "montserrat";
+		letter-spacing: 1px;
+		line-height: 13.2px;
+	}
+
+	.gallary-matrix ul li h3:hover {
+		color: #c19c78;
+		font-weight: bold;
+	}
+
+	.gallary-matrix .price {
+		display: block;
+		height: 30px;
+		padding: 6px 0 6px 0; 
+		margin: 6px 0;
+		font-size: 13px;
+		line-height: 20.4px;
+		color: #999;
+		font-family: 'lola', serif;
+	}
+
+	.gallary-matrix .dollar {
+		font-size: 18px;
+		border-bottom: 2px solid #c19c78;
+		color: #000;
+		font-family: 'montserrat', serif;
+	}
+
+	.button-view-room-details {
+		padding: 3px 15px;
+		font-size: 10px;
+		letter-spacing: 1px;
+		color: #c19c78;
+		border: 1px solid #c19c78;
+		border-radius: 10px;
+	}
+
+	.button-view-room-details:hover {
+		background-color: #c19c78;
+		color: #fff;
+	}
+
+	.all-boxes {
+		width: 100%;
+		clear: both;
+		margin: 50px -999px 100px -999px;
+		padding: 50px 999px;
+		background-color: #f5f5f5;
+	}
+
+	.two-boxes {
+		overflow: hidden;
+		background-color: #fff;
+		vertical-align:middle;
+	}
+
+	.two-boxes.flex{
+		display:flex;
+	}
+
+	.two-boxes.flex1 .dinner-explanation{
+		order:0;
+		align-self : center;
+	}
+
+	.two-boxes.flex2 .dinner-explanation{
+		order:1;
+		align-self : center;
+	}
+
+	.two-boxes.flex1 a {
+		float:right;
+		order:1;
+	}
+	
+	.two-boxes a img  {
+		width: 570px;
+		height: 570px;
+	}
+
+	.two-boxes a img:hover  {
+		-webkit-filter: grayscale(100%); 
+	}
+
+	.two-boxes .img-position1 {
+		float: right;
+	}
+
+	.two-boxes .img-position2 {
+		float: left; 
+	}
+
+	.dinner-explanation {
+		width: 416px;
+		padding: 45px 77px;
+	}
+
+	.dinner-explanation h4 {
+		font-size: 18px;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+	}
+
+	.dinner-explanation div p {
+		font-family: "lola", serif;
+		font-size: 13px;
+		line-height: 22px;
+		font-style: italic;
+		margin-bottom: 42px;
+	}
+
+	.dinner-explanation a {
+		background-color: #c19c78;
+		font-size: 12px;
+		color: #fff;
+		letter-spacing: 1px;
+		padding: 12px 35px;
+		border-radius: 36px;
+	}
+
+	.dinner-explanation a:hover {
+		background-color: #ebebeb;
+    	color: #292b2c;
+    }
+
+	.columns-3 ul {
+		margin-bottom: 44px;
+		overflow: hidden;
+	}
+
+	.columns-3 ul li {
+		width: 350px;
+		height: 382px;
+		float: left;
+		margin: 0 45px 40px 0;
+	}
+
+	.columns-3 ul li.columnImg-no-margin {
+		margin: 0 0 40px 0;
+	}
+
+	.columns-3 ul li img {
+		width: 350px;
+		height: 215px;
+	}
+
+	.columns-3 h4 {
+		padding: 16px 0;
+	}
+
+	.columns-3 h4 a{
+		font-size: 16px;
+		font-family: "montserrat", serif;
+		line-height: 17.6px;
+		color: #000; 
+		letter-spacing: 1.5px;
+	}
+
+	.columns-3 h4 a:hover {
+		color: #c19c78; 
+	}
+
+	.columns-3 ul li div span, time, p {
+		font-family: "lola", serif;
+		font-size: 13px;
+	}
+
+	.columns-3 ul li div span {
+		font-style: italic;
+		color: #999;
+	}
+
+	.columns-3 .date {
+		text-decoration: underline;
+		font-weight: bold;
+		color: #000;
+	}
+
+	.columns-3 .date:hover {
+		color: #c19c78;
+	}
+
+	.columns-3 ul li div p {
+		font-size: 13px;
+		line-height: 22px;
+		margin-top: 15px;
+	}
+
+	.location {
+		margin: 0 228px 37.8px 228px; 
+	}
+
+	.location p, .location em {
+		clear: both;
+		font-size: 18px;
+		font-family: "lola", serif;
+		font-weight: bold;
+		line-height: 30.2px;
+		text-align: center;
+		margin-bottom: 27px;
+	}
+
+	.location p em{
+		font-style: italic;
+	}
+
+	.seperator:after {
+		position: relative;
+		content: '';
+		display: block; 
+		width: 400px;
+		height: 1px;
+		background-color: #ebebeb;
+		margin-bottom: 80px;
+		left: 50%;
+		margin-left: -200px;
+	}
+
+	/*지도 옵션 주는 법? 위치 핀 & 배경색 브라운*/
+	/*구글지도 너무 불안정한듯?ㅠ*/
+	#map {
+		position: relative;
+		width: 1140px;
+		height: 500px;
+		margin-top: -40px;
+		margin-bottom: 100px;
+	}
+
