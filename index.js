@@ -9,7 +9,7 @@ app.listen(3000, function() {
 
 // routing
 app.get('/', function(req, res) {
-	fs.readFile('index.html', function(error, data) {
+	fs.readFile('./public/index.html', function(error, data) {
 		if (error) {
 			console.log(error);
 		} else {
