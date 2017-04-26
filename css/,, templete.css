@@ -1,0 +1,33 @@
+/*반응형 웹*/
+@media screen and (max-width:768px) {
+  /*바뀔 내용*/
+}
+
+@font-face{
+	font-family:"montserrat";
+	src:url('/fonts/montserrat.otf');
+	/*폰트 로딩 에러남, 콘솔확인*/
+	src:url('/fonts/lola.ttf');
+}
+
+/*여기 import 해줘야함? 안해도 될듯?*/
+@import url ('reset.css');
+@import url ('header.css');
+@import url ('footer.css');
+
+
+#wrapper {
+	margin: 84px 150px;
+	margin-top: 84px;
+
+}
+
+/*메인 시작*/
+#main {
+}
+
+
+
+
+
+
