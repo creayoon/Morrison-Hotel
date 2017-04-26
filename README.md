@@ -1,2 +1,2 @@
 # Demo
-[DEMO]('https://morrison-hotel.herokuapp.com/')
+[DEMO](https://morrison-hotel.herokuapp.com/)
