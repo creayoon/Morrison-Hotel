@@ -3,7 +3,9 @@ var app = express();
 var fs = require('fs');
 
 // port
-app.listen(3000, function() {
+var port = process.env.PORT || 3000;
+
+app.listen(port, function() {
 	console.log('server run');
 });
 
@@ -19,4 +21,4 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.use(express.static(__dirname + '/dist'))
+app.use(express.static(__dirname + '/dist'));
