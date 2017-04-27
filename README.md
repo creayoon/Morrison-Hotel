@@ -1,3 +1,6 @@
-# demo
-[Demo](https://morrison-hotel.herokuapp.com/)
-<!-- [GitHub](http://github.com) -->
+# Demo
+[DEMO](https://morrison-hotel.herokuapp.com/)
+
+# Getting started
+-npm install
+-npm start
